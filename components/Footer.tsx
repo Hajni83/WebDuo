@@ -28,10 +28,12 @@ export default function Footer() {
           <div>
             <h4 className="text-slate-900 font-bold mb-6 text-sm uppercase tracking-widest">{t.footer.nav_title}</h4>
             <ul className="flex flex-wrap gap-x-6 gap-y-3">
-              <li><Link href="#services" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.services}</Link></li>
-              <li><Link href="#about" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.about}</Link></li>
-              <li><Link href="#portfolio" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.portfolio}</Link></li>
-              <li><Link href="#contact" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.contact}</Link></li>
+              <li><Link href="/#services" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.services}</Link></li>
+              <li><Link href="/#about" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.about}</Link></li>
+              <li><Link href="/#portfolio" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.portfolio}</Link></li>
+              <li><Link href="/#contact" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.contact}</Link></li>
+              <li><Link href="/privacy-policy" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.privacy_policy}</Link></li>
+              <li><Link href="/terms-of-service" className="text-slate-600 hover:text-accent-primary text-sm transition-colors">{t.nav.terms_of_service}</Link></li>
             </ul>
           </div>
         </div>

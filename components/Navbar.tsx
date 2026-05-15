@@ -12,9 +12,9 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: t.nav.services, href: "#services" },
-    { name: t.nav.about, href: "#about" },
-    { name: t.nav.portfolio, href: "#portfolio" },
+    { name: t.nav.services, href: "/#services" },
+    { name: t.nav.about, href: "/#about" },
+    { name: t.nav.portfolio, href: "/#portfolio" },
   ];
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Navbar() {
           </button>
 
           <Link
-            href="#contact"
+            href="/#contact"
             className="px-5 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-full hover:bg-accent-primary transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-accent-primary/20"
           >
             {t.nav.cta}
@@ -108,7 +108,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="#contact"
+                href="/#contact"
                 className="w-full py-3 bg-slate-900 text-white text-center font-bold rounded-xl"
                 onClick={() => setIsOpen(false)}
               >
