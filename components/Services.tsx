@@ -25,15 +25,15 @@ export default function Services() {
     <section id="services" className="py-24 bg-white/50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <motion.h2
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-accent-primary font-bold tracking-widest uppercase text-sm mb-4"
           >
             {t.services.badge}
-          </motion.h2>
-          <motion.h3
+          </motion.p>
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -41,7 +41,7 @@ export default function Services() {
             className="text-4xl md:text-5xl font-black text-slate-900"
           >
             {t.services.title_part1} <span className="text-slate-400">{t.services.title_accent}</span>
-          </motion.h3>
+          </motion.h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -58,7 +58,7 @@ export default function Services() {
               <div className={`w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 transition-colors ${i % 2 === 0 ? 'group-hover:bg-accent-primary/10' : 'group-hover:bg-accent-secondary/10'}`}>
                 <service.icon className={`w-7 h-7 ${i % 2 === 0 ? 'text-accent-primary' : 'text-accent-secondary'}`} />
               </div>
-              <h4 className="text-xl font-bold mb-4 text-slate-900">{service.title}</h4>
+              <h3 className="text-xl font-bold mb-4 text-slate-900">{service.title}</h3>
               <p className="text-slate-600 leading-relaxed text-sm">
                 {service.desc}
               </p>

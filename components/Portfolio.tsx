@@ -20,15 +20,15 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-start md:items-center lg:items-end mb-16 gap-8">
           <div>
-            <motion.h2
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-accent-secondary font-bold tracking-widest uppercase text-sm mb-4 md:text-center lg:text-left"
             >
               {t.portfolio.badge}
-            </motion.h2>
-            <motion.h3
+            </motion.p>
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -36,7 +36,7 @@ export default function Portfolio() {
               className="text-4xl md:text-5xl font-black text-slate-900 md:text-center lg:text-left"
             >
               {t.portfolio.title_part1} <span className="text-slate-400">{t.portfolio.title_accent}</span>
-            </motion.h3>
+            </motion.h2>
           </div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -88,9 +88,9 @@ export default function Portfolio() {
                   <span className={`text-xs font-bold uppercase tracking-widest mb-2 block ${i % 2 === 0 ? 'text-accent-primary' : 'text-accent-secondary'}`}>
                     {project.category}
                   </span>
-                  <h4 className="text-2xl font-bold mb-3 group-hover:text-accent-primary transition-colors text-slate-900">
+                  <h3 className="text-2xl font-bold mb-3 group-hover:text-accent-primary transition-colors text-slate-900">
                     {project.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-600 text-sm leading-relaxed max-w-sm">
                     {project.description}
                   </p>

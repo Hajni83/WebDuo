@@ -24,13 +24,13 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-accent-secondary font-bold tracking-widest uppercase text-sm mb-4 md:text-center lg:text-left">
+            <p className="text-accent-secondary font-bold tracking-widest uppercase text-sm mb-4 md:text-center lg:text-left">
               {t.about.badge}
-            </h2>
-            <h3 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-slate-900 md:text-center lg:text-left">
+            </p>
+            <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-slate-900 md:text-center lg:text-left">
               {t.about.title_part1} <br />
               <span className="text-slate-400">{t.about.title_accent}</span>
-            </h3>
+            </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed md:text-center lg:text-left">
               {t.about.description1}
             </p>

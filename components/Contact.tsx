@@ -53,13 +53,13 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-accent-secondary font-bold tracking-widest uppercase text-sm mb-4 md:text-center lg:text-left">
+            <p className="text-accent-secondary font-bold tracking-widest uppercase text-sm mb-4 md:text-center lg:text-left">
               {t.contact.badge}
-            </h2>
-            <h3 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-slate-900 md:text-center lg:text-left">
+            </p>
+            <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-slate-900 md:text-center lg:text-left">
               {t.contact.title_part1} <br />
               <span className="text-slate-400">{t.contact.title_accent}</span>
-            </h3>
+            </h2>
             <p className="text-lg text-slate-600 mb-12 leading-relaxed max-w-md md:text-center lg:text-left md:max-w-none lg:max-w-md">
               {t.contact.description}
             </p>
@@ -77,7 +77,7 @@ export default function Contact() {
                   <div className="w-16 h-20 rounded-2xl overflow-hidden border-2 border-accent-secondary/20 hover:border-accent-secondary transition-all shadow-sm">
                     <Image
                       src="/avatars/avatar.png"
-                      alt="Hajnalka"
+                      alt="Maró Hajnalka - Kapcsolat"
                       width={64}
                       height={64}
                       quality={95}
@@ -105,7 +105,7 @@ export default function Contact() {
                   <div className="w-16 h-20 rounded-2xl overflow-hidden border-2 border-accent-primary/20 hover:border-accent-primary transition-all shadow-sm">
                     <Image
                       src="/avatars/Jocó.png"
-                      alt="Jocó"
+                      alt="Tar József - Kapcsolat"
                       width={64}
                       height={64}
                       quality={95}
@@ -141,7 +141,7 @@ export default function Contact() {
                 className="flex flex-col items-center justify-center text-center py-12 relative z-10"
               >
                 <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-                <h4 className="text-2xl font-black text-slate-900 mb-2">Elküldve!</h4>
+                <h3 className="text-2xl font-black text-slate-900 mb-2">Elküldve!</h3>
                 <p className="text-slate-600 mb-6">Köszönjük az üzeneted! Hamarosan felvesszük veled a kapcsolatot.</p>
                 <button
                   onClick={() => setStatus("idle")}

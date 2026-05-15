@@ -96,7 +96,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5">
                 <Image
                   src="/avatars/avatar.png"
-                  alt="Hajni"
+                  alt="Maró Hajnalka - Frontend Developer"
                   width={240}
                   height={300}
                   quality={95}
@@ -115,7 +115,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
                   src="/avatars/Jocó.png"
-                  alt="Jocó"
+                  alt="Tar József - Fullstack Developer"
                   width={240}
                   height={300}
                   quality={95}
@@ -143,7 +143,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
                   src="/avatars/avatar.png"
-                  alt="Hajni"
+                  alt="Maró Hajnalka - Frontend Developer"
                   width={480} 
                   height={600} 
                   quality={95}
@@ -162,7 +162,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
                   src="/avatars/Jocó.png"
-                  alt="Jocó"
+                  alt="Tar József - Fullstack Developer"
                   width={290}
                   height={360}
                   quality={95}
