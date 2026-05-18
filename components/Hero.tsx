@@ -67,94 +67,43 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* RIGHT — képek */}
-          {/* MOBIL + TABLET: egymás mellé, középre igazítva */}
-          {/* DESKTOP: egymásra csúsztatva, split layout */}
-
-          {/* Mobil / Tablet nézet (lg alatt) */}
-          <div className="flex lg:hidden justify-center items-end gap-4 sm:gap-6 order-2 mt-4 sm:mt-8">
+          {/* RIGHT — képek (minden nézetben reszponzív, egymás mellett, nincs átfedés) */}
+          <div className="relative flex justify-center items-end gap-4 sm:gap-6 lg:gap-8 order-2 mt-8 lg:mt-0 w-full z-10">
             {/* Dekoratív háttérkör */}
-            <div className="absolute left-1/2 -translate-x-1/2 w-[260px] sm:w-[320px] h-[260px] sm:h-[320px] rounded-full bg-gradient-to-br from-slate-100 to-slate-200 opacity-50 pointer-events-none" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[320px] lg:w-[420px] h-[260px] sm:h-[320px] lg:h-[420px] rounded-full bg-gradient-to-br from-slate-100 to-slate-200 opacity-50 pointer-events-none z-0" />
 
-            {/* Hajni — kisebb, bal */}
+            {/* Hajni — bal oldali kép */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45 }}
-              className="relative w-[160px] sm:w-[210px] md:w-[240px] aspect-[4/5] z-20"
+              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300 mb-6 sm:mb-8 md:mb-10"
             >
-              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5">
+              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-primary transition-all duration-300">
                 <Image
                   src="/avatars/avatar.png"
                   alt="Maró Hajnalka - Frontend Developer"
-                  width={240}
-                  height={300}
+                  width={350}
+                  height={437}
                   quality={95}
                   className="w-full h-full object-cover object-top"
                 />
               </div>
             </motion.div>
 
-            {/* Jocó — nagyobb, jobb, lejjebb */}
+            {/* Jocó — jobb oldali kép */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.45 }}
-              className="relative w-[160px] sm:w-[210px] md:w-[240px] aspect-[4/5] z-20"
+              transition={{ duration: 0.7, delay: 0.55 }}
+              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300"
             >
-              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-secondary transition-all duration-300">
                 <Image
                   src="/avatars/Jocó.png"
                   alt="Tar József - Fullstack Developer"
-                  width={240}
-                  height={300}
-                  quality={95}
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Desktop nézet (lg+): egymásra csúsztatva */}
-          <div className="relative hidden lg:flex justify-center items-center h-[540px] order-2">
-
-            {/* Dekoratív háttérkör */}
-            <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
-              <div className="w-[380px] h-[380px] rounded-full bg-gradient-to-br from-slate-100 to-slate-200 opacity-60" />
-            </div>
-
-            {/* Hajni — háttérben, bal fent, kisebb */}
-            <motion.div
-              initial={{ opacity: 0, x: 40, y: -20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
-              className="absolute top-0 left-4 w-[290px] h-[360px] z-10"
-            >
-              <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
-                <Image
-                  src="/avatars/avatar.png"
-                  alt="Maró Hajnalka - Frontend Developer"
-                  width={480}
-                  height={600}
-                  quality={95}
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </motion.div>
-
-            {/* Jocó — előtérben, jobb lent, nagyobb */}
-            <motion.div
-              initial={{ opacity: 0, x: -40, y: 20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-              className="absolute bottom-0 right-4 w-[290px] h-[360px] z-20"
-            >
-              <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
-                <Image
-                  src="/avatars/Jocó.png"
-                  alt="Tar József - Fullstack Developer"
-                  width={290}
-                  height={360}
+                  width={350}
+                  height={437}
                   quality={95}
                   className="w-full h-full object-cover object-top"
                 />
@@ -162,7 +111,6 @@ export default function Hero() {
             </motion.div>
 
           </div>
-
         </div>
       </div>
     </section>
