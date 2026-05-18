@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://web-duo.vercel.app"),
+  metadataBase: new URL("https://devduo.eu"),
   title: {
     default: "DEV DUO | Prémium Webfejlesztés & Digitális Megoldások",
     template: "%s | DEV DUO"
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "hu_HU",
-    url: "https://web-duo.vercel.app",
+    url: "https://devduo.eu",
     title: "DEV DUO | Prémium Webfejlesztés & Digitális Megoldások",
     description: "Enterprise-szintű webfejlesztés, egyedi webalkalmazások, és prémium honlapok készítése.",
     siteName: "DEV DUO",
@@ -58,8 +58,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "DEV DUO",
-    "image": "https://web-duo.vercel.app/og-image.jpg",
-    "url": "https://web-duo.vercel.app",
+    "image": "https://devduo.eu/og-image.jpg",
+    "url": "https://devduo.eu",
     "telephone": "",
     "email": "hajnalka@devduo.eu",
     "address": {

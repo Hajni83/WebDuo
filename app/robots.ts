@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://web-duo.vercel.app/sitemap.xml',
+    sitemap: 'https://devduo.eu/sitemap.xml',
   };
 }
